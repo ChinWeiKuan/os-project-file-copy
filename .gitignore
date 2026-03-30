@@ -56,3 +56,4 @@ FileCopy
 secret.txt
 source.txt
 dest.txt
+.DS_Store
