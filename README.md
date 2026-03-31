@@ -57,9 +57,9 @@ diff source.txt dest.txt
 ### d. System Trace: dtruss via SIP
 ![alt text](<snapshot/04_dtruss_failed due to SIP.png>)
 
-Observation of kernel-level system calls. The `dtruss` output is restricted by macOS **System Integrity Protection (SIP)** on modern macOS for security reasons.
+The `dtruss` output is restricted by macOS **System Integrity Protection (SIP)** on modern macOS for security reasons. Attempting to bypass this by disabling SIP is not recommended for the potentional risks and unpredictable system instability.
 
-However, the program's logic is verified via `diff` and binary comparison. To view traces, ensure the binary is not restricted by SIP or run in a sandbox-relaxed environment.
+However, the program's logic is verified via diff and binary comparison. To view traces, ensure the binary is not restricted by SIP or run in a sandbox-relaxed environment.
 
 ## 6. File Structure
 * `FileCopy.c`: Core source code (POSIX I/O logic).
